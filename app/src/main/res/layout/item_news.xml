@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="25dp"
+    app:cardBackgroundColor="@android:color/transparent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="9"
+        android:background="?attr/colorSurface">
+
+        <ImageView
+            android:id="@+id/img_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/test111" />
+
+        <TextView
+            android:id="@+id/tv_title_news"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical|end"
+            android:justificationMode="inter_word"
+            android:text="Гол и передача Головина приблизили «Монако» к Лиге чемпионов"/>
+
+        <TextView
+            android:id="@+id/tv_descriptions_news"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:textSize="11sp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_vertical|end"
+            android:justificationMode="inter_word"
+            android:text="В последнем туре РПЛ решалось многое: кто-то боролся за Лигу чемпионов, а кто-то — за право остаться в Премьер-Лиге. ЦСКА имел шансы пробиться в Лигу конференций — новый еврокубковый турнир под эгидой УЕФА. Для этого армейцам нужно было побеждать «Динамо», но с задачей они не справились (2:3).\n\n\nПо итогам сезона ЦСКА довольствовался только шестым местом и в еврокубки не попал. Такого с армейцами не случалось очень давно — 21 год. Вспоминаем, каким был мир и футбол в 2000 году, когда ЦСКА в прошлый раз пролетел мимо Европы."
+            />
+
+        <TextView
+            android:id="@+id/tv_date_news"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="start"
+            android:text="17 мая 2021"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

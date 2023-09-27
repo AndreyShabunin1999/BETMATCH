@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BETMATCH</string>
+    <string name="text_table_btn">Таблица</string>
+    <string name="text_news_btn">Новости</string>
+    <string name="text_statistics_btn">Статистика</string>
+    <string name="text_settings_btn">Настройки</string>
+    <string name="text_title_activity_settings"><u>Настройки</u></string>
+    <string name="text_notification">Уведомления</string>
+    <string name="text_black_theme">Темная тема</string>
+    <string name="text_background">Обои</string>
+    <string name="text_change_btn">Change</string>
+    <string name="text_title_activity_statistics"><u>Статистика</u></string>
+    <string name="text_btn_defense">Оборона</string>
+    <string name="text_btn_attack">Атака</string>
+    <string name="text_title_activity_news"><u>Новости</u></string>
+
+    <string-array name="stat_defense">
+        <item>Команда</item>
+        <item>Турнир</item>
+        <item>Удары з.и.</item>
+        <item>Отборы з.и.</item>
+        <item>Перехваты з.и.</item>
+        <item>Фолы з.и.</item>
+        <item>Рейтинг</item>
+        <item>Офсайды з.и.</item>
+    </string-array>
+
+    <string-array name="stat_attack">
+        <item>Команда</item>
+        <item>Турнир</item>
+        <item>Удары з.и.</item>
+        <item>Удары ВСтв з.и.</item>
+        <item>Дриблинг з.и.</item>
+        <item>Дано фолов з.и.</item>
+        <item>Рейтинг</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_title_table_activity"><u>Таблицы</u></string>
+</resources>

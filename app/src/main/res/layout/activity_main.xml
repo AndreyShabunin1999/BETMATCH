@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:id="@+id/main_constraint"
+    android:background="@drawable/background1"
+    tools:context=".view.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/table_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_table_btn"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorSurface"
+        android:textStyle="italic|bold"
+        android:textSize="42sp"
+        android:radius="15dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintBottom_toTopOf="@+id/news_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_app_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/news_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_news_btn"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorSurface"
+        android:textStyle="italic|bold"
+        android:textSize="42sp"
+        android:radius="15dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintBottom_toTopOf="@+id/statistics_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/statistics_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_statistics_btn"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorSurface"
+        android:textStyle="italic|bold"
+        android:textSize="42sp"
+        android:radius="15dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintBottom_toTopOf="@id/settings_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settings_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_settings_btn"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorSurface"
+        android:textStyle="italic|bold"
+        android:textSize="42sp"
+        android:radius="15dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statistics_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

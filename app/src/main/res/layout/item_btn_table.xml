@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@android:color/transparent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/table_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_table_btn"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorSurface"
+        android:textStyle="italic|bold"
+        android:textSize="24sp"
+        android:radius="15dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button" />
+
+</androidx.cardview.widget.CardView>

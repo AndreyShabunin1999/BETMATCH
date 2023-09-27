@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:padding="15dp"
+    android:weightSum="5"
+    android:orientation="vertical"
+    tools:context=".view.StatisticsActivity">
+
+    <TextView
+        android:id="@+id/title_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title_activity_statistics"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorSurface"
+        android:textSize="42sp"
+        android:textStyle="italic|bold" />
+
+    <LinearLayout
+        android:id="@+id/linear_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_defense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:background="@drawable/rounded_button"
+            android:paddingBottom="5dp"
+            android:radius="15dp"
+            android:text="@string/text_btn_defense"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorSurface"
+            android:textSize="26sp"
+            android:textStyle="italic|bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_attack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:background="@drawable/rounded_button_not_checked"
+            android:paddingBottom="5dp"
+            android:radius="15dp"
+            android:text="@string/text_btn_attack"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorSurface"
+            android:textSize="26sp"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <TableLayout
+            android:id="@+id/table_stat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_marginTop="15dp"
+                android:background="?attr/colorSecondaryVariant">
+
+                <TextView
+                    android:id="@+id/tv_commands_stat"
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Команда"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_tournament_stat"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Турнир"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_blows_stat"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Удары з.и."
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_select_stat"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Отборы з.и."
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_interc_stat"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Перехваты з.и."
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_fouls_stat"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Фолы з.и."
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_rating_stat"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Рейтинг"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_offsides_stat"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Офсайды з.и."
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_stat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:background="?attr/colorSecondaryVariant" />
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

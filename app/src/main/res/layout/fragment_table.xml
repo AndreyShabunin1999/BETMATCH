@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:weightSum="5"
+    android:orientation="vertical"
+    tools:context=".view.TableFragment">
+
+    <TextView
+        android:id="@+id/title_table_command"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Россия"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="?attr/colorSurface"
+        android:textSize="36sp"
+        android:textStyle="italic|bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <TableLayout
+            android:id="@+id/table_stat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_marginTop="15dp"
+                android:background="?attr/colorSecondaryVariant">
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Команда"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Игры"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="В"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="H"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="П"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Мячи"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Очки"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="% очков"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tv_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:background="?attr/colorSecondaryVariant"/>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
